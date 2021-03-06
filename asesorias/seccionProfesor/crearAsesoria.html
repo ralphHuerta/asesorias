@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/css/index.css">
+        <link rel="stylesheet" href="../css/header2.css">
+        <link rel="stylesheet" href="../css/styleProfesores.css">
+        <link rel="Icon" href="https://secreacademica.cs.buap.mx/images/minerva_icon.png">
+
+    </head>
+    <body>
+        <header class="header1">
+            <div class="word-menu">
+                <a >AsesoriasFCC</a>
+            </div>
+            <div class="menu-opciones">
+                <div class="btn-menu">
+                    <input class="btn-menu-check" type="checkbox" id="btn-menu1">
+                    <labelfor="btn-menu"> <img class="btn-menu-img btn-menu-line" src="../img/menu.ico"> </label>
+                </div> 
+                
+                <nav class="menu-listas">
+                    <ul>
+                        <li><a href="menuProfesor.html">Mis asesorias</a></li>
+                        <li><a href="../horario-v2/horarioInicio.php">Crear horario</a></li>
+                        <li><a href="#">Crear Asesoria</a></li>
+                        <li><a href="PerfilProfesor.html">Perfil</a></li>
+                        <li><a href="#">Notificaciones</a></li>
+                        <li><a href="../salir.php">Cerrar sesion</a></li>
+                    </ul> 
+                </nav>
+                
+                
+            </div>
+        </header>
+        
+        <section class="main-box">
+            <div class="heading heading2 ">
+                <h1 >Asesoria que se impartira</h1>
+            </div>
+            <form class="card-wrapper">
+                <div class="cont1">
+                    <p>Nombre de la aseosria</p>
+                    <input class="cont-text" placeholder="Nombre de la asesoria" id="duda" text="text" >
+
+                </div>
+                
+                <div class="cont1">
+                    <p > Día <input class="cont-text" placeholder="Ej:Lunes" id="dia" text="text" required > </p>
+                    <p >Hora <input class="cont-text" placeholder="Ej:11:00pm" type="time" name="hora" required> </p>
+                    <p >Lugar <input class="cont-text"  placeholder="Ej:CC4 110" id="Lugar" text="text" required></p>                    
+                </div>
+
+                <div class="cont1">
+                    <p>
+                        Detalles de la asesoria que impartira
+                    </p>
+                    <textarea class="cont-text"  placeholder="Opcional" name="detalles" rows="2" cols="20"></textarea>
+
+                </div>
+                <div class="cont1">
+                    <p>contacto</p>
+                     <input class="cont-text" placeholder="Ej:correo@buap.mx, 22-22-22-22-22" id="duda" text="text" tabindex="5">
+                </div>
+                <div class="cont2">
+                    <button class="btn-successful" >Guardar</button>
+                </div>
+               
+            </form>
+                  
+        </section>
+    </body>
+</html>

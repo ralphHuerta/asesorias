@@ -1,0 +1,167 @@
+:root{
+    --primary-color: #00395e;
+    --secondary-color: #002D4c;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header1{
+    background-color: var(--secondary-color);
+    display: flex;
+}
+.word-menu{
+    font-size: 2.5rem;
+    color: #fff;
+    width: 30%;
+}
+.menu-opciones{
+    width: 70%;
+
+}
+.btn-menu{
+    width: 50px;
+}
+.btn-menu, .btn-menu-check{
+    display: none;
+}
+.menu-listas ul{
+    margin: 0;
+    list-style: none;
+    padding: 10px 0 0 0;
+    display: flex;
+}
+.menu-listas ul li a:hover{
+    background: #fff;
+    color: var(--secondary-color);
+    border-radius: 0 20px 0 0;
+    font-size: 1.8rem;
+}
+.menu-listas ul li a{
+    color: #fff;
+    font-size: 1.2rem;
+   /* display: block;*/
+    padding:  5px 20px 0;
+    text-decoration: none;
+}
+
+
+
+.btn-menu-line{
+    display: none;
+    width: 30px;
+
+    padding: 4px;
+    border-right: 1px solid #fff;
+    background: rgba(0,0,0,0.3)
+}
+header label:hover{
+    cursor: pointer
+}
+.heading2{
+    margin: 0 auto;
+}
+
+
+
+@media all and (min-width:500px) and (max-width:950px){
+
+    .word-menu{
+        font-size: 2.1em;
+    }
+    .btn-menu, .btn-menu-line{
+
+        display: block;
+    }
+    .btn-menu{
+        position: absolute;
+        right: 1px;
+    }
+    .menu-listas{
+        width: 100%;
+        position: absolute;
+        position: relative;
+        margin-top: 50px;
+        display: none;
+       
+       
+    }
+    .menu-listas ul{
+        flex-direction: column;
+        background-color: #002D4c; 
+    }
+    .menu-listas ul li{
+        border-top: 1px solid #FFF;
+    }
+    .menu-listas ul li a{
+    height: auto;
+    }
+    .menu-listas ul li a:hover{
+        border-radius: 0;
+        font-size: 1.2rem;
+    }
+    .menu-opciones:hover    .menu-listas {
+        display: block;
+       
+    }
+    .header1:hover .main-box{
+        margin-top: 300px;
+        
+    }
+    
+ 
+}
+
+@media all and (max-width:500px){
+
+    .menu-opciones{
+        width: 35%;
+    }
+    .word-menu{
+        width: 75%;
+        font-size: 2.1em;
+    }
+    .btn-menu, .btn-menu-line{
+
+        display: block;
+    }
+    .btn-menu{
+        position: absolute;
+        right: 1px;
+    }
+    .menu-listas{
+        width: 100%;
+        
+        position: relative;
+        margin-top: 50px;
+        display: none;
+       
+       
+    }
+    .menu-listas ul{
+        flex-direction: column;
+        background-color: #002D4c; 
+    }
+    .menu-listas ul li{
+        border-top: 1px solid #FFF;
+    }
+    .menu-listas ul li a{
+    height: auto;
+    }
+    .menu-listas ul li a:hover{
+        border-radius: 0;
+        font-size: 1.2rem;
+    }
+    /*.menu-opciones:hover    .menu-listas {
+        display: block;
+       
+    }*/
+    .header1:hover .main-box{
+        margin-top: 300px;
+        
+    }
+    
+ 
+}

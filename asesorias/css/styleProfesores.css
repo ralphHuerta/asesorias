@@ -1,0 +1,161 @@
+:root{
+    --primary-color: #00395e;
+    --secondary-color: #002D4c;
+}
+.heading{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: #333;
+    position: relative;
+    
+}
+.heading::after {
+    content: "";
+    width: 10rem;
+    height: .8rem;
+    background-color: #45E19F;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+}
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:  90%;
+    margin: 0 5%;
+    justify-content: center;
+}
+.box-asesoria{
+    width: 300px;
+    background: #EBEEF8;  
+    margin: 30px; 
+}
+.box-asesoria,.cont3,.cont3-1,.cont4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow:  3.5px 3.5px 6px 6px rgba(0,0,0,0.2);
+    
+}
+.materia-style{
+    font-size: 1.9em;
+    color: #333;
+}
+.word-style{
+    text-transform: uppercase;
+    color: #777;
+    font-size: 0.9em;
+}
+.button-asesorias{
+    text-align: center;
+    width: 35%;
+    padding: 10px 0;
+    border-radius: 20px;
+    margin: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #445AE3; 
+}
+.box-asesoria:hover{
+    background: #fff;
+}
+
+.cont1{
+    width: 49%;
+    height: 150px;
+    border : rgb(167, 166, 166) 1px solid;
+    text-align: center;
+    text-transform: uppercase;
+    color: #00005f;
+    font-size: 1.1em;  
+}
+
+.cont2{
+    padding: 15px 0;
+    width: 98.25%;
+    border: rgb(167, 166, 166) 1px solid ;
+    text-align: center;
+}
+
+.cont3{
+    width: 150px;
+    height: 150px;
+    margin: 10px 30px;
+}
+.cont3-1{
+    width: 150px;
+    height: 150px;
+    margin: 10px 20px 0;
+
+}
+.cont4{
+    width: 230px;
+    height: 150px;
+    margin: 15px ;
+}
+
+.cont-text{
+    height: 20px;
+    border: none;
+}
+.btn-successful{ 
+    background-color: #8dc926;
+    border-radius: 10px;
+    height: 35px;
+    width: 300px;
+    font-size: 1.2em;
+    color: #fff;
+    
+}
+
+.registro-Profe{
+    width: 40%;
+    background-color: #f5ebeb;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:10px;
+    border-radius: 5%;
+    box-shadow:  3.5px 3.5px 6px 6px rgba(133, 131, 131, 0.2);
+
+}
+.cont-registro{
+    width: 75%;
+    height: 40px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+.cont-registro-cont{
+    height: 80%;
+    width: 90%;
+    margin: 2%;
+    border-radius:20px;
+    border-color: #ffff;
+    font-size: 0.9em;
+    color: #bdbd61;
+    text-align: center;
+}
+
+@media all and (max-width: 950px){
+    .cont1,.cont2{
+        width: 100%;
+    }
+    .registro-Profe{
+        width: 80%;
+    }
+}

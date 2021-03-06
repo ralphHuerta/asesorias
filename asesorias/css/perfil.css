@@ -1,0 +1,81 @@
+
+.main-box,.date-perfil,.secon-box,.date-perfil-secon, .img-perfil{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main-box,.date-perfil,.secon-box{
+    align-items: flex-start;
+}
+
+.main-box{
+    background-color: #fffff8
+}
+.date-perfil,.date-perfil-secon{
+    margin-top: 30px;
+    width: 100%;
+    margin-left: 10px; 
+    border: #fff8f8 5px solid;
+    border-radius: 0  0 20px 20px;
+}
+.date-perfil-secon,.img-perfil{
+    align-items: center;
+    justify-content: center;
+}
+
+.img-perfil{
+    width: 275px;
+    height: 500px;
+    background-color: rgb(243, 243, 243) ; 
+    margin: 0 1% 0 2% ;
+}
+.icon-perfil{
+    width: 40px;
+    height: 40px;
+}
+.word-perfil{
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+}
+.word-facultad{
+    text-align: center;
+    margin: 5px;
+}
+.secon-box{
+    width: 65%;
+    
+}
+.perfil-photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px;  
+    
+}
+@media all and (min-width:700px) and (max-width:950px){
+    .secon-box, .main-box{
+        justify-content: center;
+        width: 100%;
+    }
+    .img-perfil{
+        width: 500px;
+        height: 275px;       
+    }
+}
+
+@media all and (max-width: 700px){
+    .main-box,.date-perfil{
+        justify-content: center;
+    }
+    .secon-box, .main-box{
+        justify-content: center;
+        width: 100%;
+    }
+    .img-perfil{
+        width: 500px;
+        height: 275px;       
+    }
+}
